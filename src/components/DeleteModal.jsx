@@ -22,18 +22,19 @@ function DeleteModal({ invoiceId,onDeleteButtonClick, setIsDeleteModalOpen }) {
                 </p>
 
                 <div className=" flex w-full mt-4 items-center justify-center space-x-4 ">
+                <button
+                        onClick={() => setIsDeleteModalOpen(false)}
+                        className="w-full items-center text-[#635fc7] dark:bg-white hover:opacity-75 bg-[#635fc71a]  py-2 rounded-full"
+                    >
+                        Cancel
+                    </button>
                     <button
                         onClick={onDeleteButtonClick}
                         className="w-full items-center text-white hover:opacity-75 bg-red-500 py-2 rounded-full"
                     >
                         Delete
                     </button>
-                    <button
-                        onClick={() => setIsDeleteModalOpen(false)}
-                        className="w-full items-center text-[#635fc7] dark:bg-white hover:opacity-75 bg-[#635fc71a]  py-2 rounded-full"
-                    >
-                        Cancel
-                    </button>
+               
                 </div>
             </div>
         </div>

@@ -349,7 +349,6 @@ function CreateInvoice({ openCreateInvoice, setOpenCreateInvoice, invoice, type 
                     </div>
 
                     <div>
-                
                         <button className=' text-white  hover:opacity-80 mx-auto py-4 items-center bg-[#7c5dfa] justify-center  px-8 rounded-full ' onClick={() => {
                             const isValid = validator()
                             setIsValidatorActive(true)
